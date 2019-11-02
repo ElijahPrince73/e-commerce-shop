@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
+import { gql } from 'apollo-boost'
+
+import { ApolloProvider, useQuery } from '@apollo/react-hooks'
 import './App.css';
 
-function App() {
+const PRODUCTS = gql`
+  {
+    products(search: "") {
+      id
+      productName
+      productDescription
+    }
+  }
+`;
+
+const App = ({ client }) => {
+  const { loading, error, data } = useQuery(PRODUCTS)
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+
+  console.log(data);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ApolloProvider client={client}>
+      <div>
+        {data.products.map(({productName , productDescription}) => {
+          return (
+            <p>
+              {productName} {productDescription}
+            </p>
+          );
+        })}
+      </div>
+    </ApolloProvider>
+  )
 }
 
 export default App;
