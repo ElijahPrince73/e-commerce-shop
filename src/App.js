@@ -1,40 +1,19 @@
-import React from 'react';
-import { gql } from 'apollo-boost'
+import React, { Component } from "react";
+import {
+  Route,
+} from "react-router-dom";
 
-import { ApolloProvider, useQuery } from '@apollo/react-hooks'
-import './App.css';
+import Tours from './containers/Tours'
 
-const PRODUCTS = gql`
-  {
-    products(search: "") {
-      id
-      productName
-      productDescription
-    }
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Route to="/" />
+        <Route to="/tours" component={Tours} />
+      </>
+    );
   }
-`;
-
-const App = ({ client }) => {
-  const { loading, error, data } = useQuery(PRODUCTS)
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
-
-  console.log(data);
-
-  return (
-    <ApolloProvider client={client}>
-      <div>
-        {data.products.map(({productName , productDescription}) => {
-          return (
-            <p>
-              {productName} {productDescription}
-            </p>
-          );
-        })}
-      </div>
-    </ApolloProvider>
-  )
 }
 
 export default App;

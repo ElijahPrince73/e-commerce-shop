@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from "@apollo/react-hooks";
-import './index.css';
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+
 import App from './App';
+import SiteLayout from "./components/SiteLayout";
 import * as serviceWorker from './serviceWorker';
 
 const client = new ApolloClient({
@@ -11,9 +13,15 @@ const client = new ApolloClient({
 });
 
 ReactDOM.render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>,
+  <Router>
+    <Switch>
+      <ApolloProvider client={client}>
+        <SiteLayout>
+          <App />
+        </SiteLayout>
+      </ApolloProvider>
+    </Switch>
+  </Router>,
   document.getElementById("root")
 );
 
