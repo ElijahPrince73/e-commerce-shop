@@ -1,0 +1,39 @@
+.ant-menu-item-selected {
+  color: black !important;
+  border-bottom: 2px solid #FBAE16 !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected > a {
+    color: black !important;
+}
+
+.ant-menu-item-active {
+  color: #FBAE16;
+  border-bottom: 2px solid #FBAE16 !important;
+}
+
+.ant-menu-item:hover {
+  color: #FBAE16 !important;
+}
+
+.ant-menu-item {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  margin: 0 75px;
+}
+
+.logo-container {
+  width: 13%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.logo {
+  width: 100%;
+}
+
+.cart-icon {
+  color: #34B9B4;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+}

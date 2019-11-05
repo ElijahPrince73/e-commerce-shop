@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import NavHeader from './NavHeader'
+import NavHeader from './NavHeader/index'
 import { Layout } from "antd";
 
 const { Content, Footer } = Layout;
