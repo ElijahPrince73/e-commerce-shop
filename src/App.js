@@ -9,8 +9,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <Route to="/" />
-        <Route to="/tours" component={Tours} />
+        <Route exact path="/" component={() => <h1>Heloo</h1>} />
+        <Route exact path="/tours" component={Tours} />
       </>
     );
   }

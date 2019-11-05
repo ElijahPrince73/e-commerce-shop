@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from "@apollo/react-hooks";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter, Switch } from "react-router-dom";
 
 import App from './App';
 import SiteLayout from "./components/SiteLayout";
@@ -13,7 +13,7 @@ const client = new ApolloClient({
 });
 
 ReactDOM.render(
-  <Router>
+  <BrowserRouter>
     <Switch>
       <ApolloProvider client={client}>
         <SiteLayout>
@@ -21,7 +21,7 @@ ReactDOM.render(
         </SiteLayout>
       </ApolloProvider>
     </Switch>
-  </Router>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
