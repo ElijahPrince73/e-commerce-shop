@@ -8,6 +8,9 @@ import App from './App';
 import SiteLayout from "./components/SiteLayout";
 import * as serviceWorker from './serviceWorker';
 
+import "./assets/css/normalize.css";
+import "./assets/css/skeleton.css";
+
 const client = new ApolloClient({
   uri: "http://localhost:4001"
 });
