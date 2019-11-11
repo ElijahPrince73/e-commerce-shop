@@ -7,7 +7,8 @@
 }
 
 .navbar-item, .cart {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 300;
   color: black;
   text-decoration: none;
   display: block;
@@ -20,7 +21,7 @@
 }
 
 .logo-container {
-  width: 20%;
+  width: 15%;
 }
 
 .logo-container img{
@@ -30,7 +31,7 @@
 .cart {
   display: flex;
   justify-content: space-between;
-  width: 7%;
+  width: 8%;
   padding: 0;
 }
 

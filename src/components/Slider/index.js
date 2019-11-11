@@ -2,44 +2,48 @@ import React, { PureComponent } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import BeachFront from '../../assets/images/beach-front.jpg'
-import BeachFront2 from "../../assets/images/beach-front-2.jpg";
-import BeachFront3 from "../../assets/images/beach-front-3.jpg";
-
-
+import './index.css'
 
 class Gallery extends PureComponent {
   render() {
     const settings = {
       dots: true,
       infinite: true,
+      arrows: false,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     };
+
     return (
-      <div>
+      <>
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
+          <div className="background1">
+            <div className="slider-text-container">
+              <p className="slider-duration">3 Days 2 Nights</p>
+              <h3 className="slider-title">Beach Adventures</h3>
+              <h3 className="slider-title">In Lombok</h3>
+              <p className="slider-price">IDR 1.500.000/per pax</p>
+            </div>
           </div>
-          <div>
-            <h3>2</h3>
+          <div className="background2">
+            <div className="slider-text-container">
+              <p className="slider-duration">3 Days 2 Nights</p>
+              <h3 className="slider-title">Beach Adventures</h3>
+              <h3 className="slider-title">In Lombok</h3>
+              <p className="slider-price">IDR 1.500.000/per pax</p>
+            </div>
           </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
+          <div className="background3">
+            <div className="slider-text-container">
+              <p className="slider-duration">3 Days 2 Nights</p>
+              <h3 className="slider-title">Beach Adventures</h3>
+              <h3 className="slider-title">In Lombok</h3>
+              <p className="slider-price">IDR 1.500.000/per pax</p>
+            </div>
           </div>
         </Slider>
-      </div>
+      </>
     );
   }
 }

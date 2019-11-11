@@ -1,0 +1,63 @@
+.background1, .background2, .background3 {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;
+  padding: 0% 0%;
+}
+
+.background1 {
+  background-image: url('../../assets/images/beach-front-1.jpg');
+}
+.background2 {
+  background-image: url('../../assets/images/beach-front-2.jpg');
+}
+.background3 {
+  background-image: url('../../assets/images/beach-front-3.jpg');
+}
+.slider-text-container {
+  position: relative;
+  padding: 70px 0px 150px 5%;
+  margin-top: 0;
+}
+
+.slider-duration {
+  font-size: 32px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.slider-title {
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.slider-price {
+  position: relative;
+  font-size: 22px;
+  color: #34b9b4;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px !important;
+  width: 15%;
+  background: white;
+}
+
+.slick-dots {
+  top: 50%; 
+  left: 95%;
+  width: 2%;
+}
+
+.slick-dots li {
+  display: inherit;
+}
+
+.slick-dots li button:before {
+  color: white;
+  font-size: 12px;
+}
