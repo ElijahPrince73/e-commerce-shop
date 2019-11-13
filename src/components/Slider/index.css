@@ -38,12 +38,12 @@
 
 .slider-price {
   position: relative;
-  font-size: 22px;
+  font-size: 21px;
   color: #34b9b4;
   text-align: center;
   padding: 5px;
   margin-top: 10px !important;
-  width: 15%;
+  width: 20%;
   background: white;
 }
 

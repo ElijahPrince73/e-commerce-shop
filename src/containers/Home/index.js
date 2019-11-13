@@ -1,12 +1,13 @@
 import React from 'react'
 import Slider from '../../components/Slider'
-import Picker from '../../components/Picker'
+import DatePicker from '../../components/DatePicker'
+import PrivateTour from '../../components/PrivateTour'
 const Home = () => {
   return (
     <div className="row">
       <div className="twelve columns">
         <Slider />
-        <Picker />
+        <PrivateTour />
       </div>
     </div>
   );

@@ -1,3 +1,28 @@
 h1, h2, h3, h4, h5, h6, p, span, a {
   font-family: 'Oswald';
 }
+
+p {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: 400;
+}
+
+.mt-3 {
+  margin-top: 3%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.u-half-width {
+  width: 50%;
+}
