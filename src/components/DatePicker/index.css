@@ -51,6 +51,8 @@
 .picker-option-titles p {
   margin: 0%;
   width: 10%;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .picker-input-container {
@@ -65,4 +67,35 @@
   background-color: #FBAE16 !important;
   padding: 0px !important;
   border-radius: 2px;
+}
+
+.picker-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55px;
+  margin-left: 15px;
+}
+
+.picker-item-select {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: transparent;
+  margin: 0;
+}
+
+.picker-item p{
+  font-weight: 400;
+  font-size: 30px;
+  color: #34b9b4;
+  width: auto;
+}
+
+.sub-item p{
+  line-height: 14px;
+  color: #4c4c4c;
+  font-size: 14px;
+  font-weight: 300;
+  width: auto;
 }

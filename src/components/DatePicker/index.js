@@ -23,20 +23,36 @@ class DatePicker extends PureComponent {
               <p>Tour Type</p>
             </div>
             <div className="picker-input-container">
-              <p className="picker-item">
-                18<span>Oct Wed</span>
-              </p>
-              <p className="picker-item">
-                2 <span>days</span>
-              </p>
-              <p className="picker-item">
-                2 <span>12+ years</span>
-              </p>
-              <p className="picker-item">
-                0 <span>1 - 12 years</span>
-              </p>
-              <select className="">
+              <div className="picker-item">
+                <p>18</p>
+                <div className="sub-item">
+                  <p>Oct</p>
+                  <p>Wed</p>
+                </div>
+              </div>
+              <div className="picker-item">
+                <p>2</p>
+                <div className="sub-item">
+                  <p> Days</p>
+                </div>
+              </div>
+              <div className="picker-item">
+                <p>2</p>
+                <div className="sub-item">
+                  <p>12+</p>
+                  <p>Years</p>
+                </div>
+              </div>
+              <div className="picker-item">
+                <p>0</p>
+                <div className="sub-item">
+                  <p>1 - 12</p>
+                  <p>Years</p>
+                </div>
+              </div>
+              <select className="picker-item-select">
                 <option value="Option 1">Full Package</option>
+                <option value="Option 1">Half Package</option>
               </select>
             </div>
           </div>
