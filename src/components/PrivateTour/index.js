@@ -19,8 +19,8 @@ class PrivateTour extends PureComponent {
           </div>
           <div className="eleven columns">
             <div className="three columns upset">
-              <h2 className="text-bold border-top big-title">How would you</h2>
-              <h2 className="text-bold">like to travel</h2>
+              <h2 className="text-bold border-top header">How would you</h2>
+              <h2 className="text-bold header">like to travel</h2>
               <p className="w-65">
                 All of our tours are private and customizable, developed to suit
                 your interestm time and budget.
