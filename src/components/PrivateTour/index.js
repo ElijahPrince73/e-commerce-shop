@@ -9,7 +9,7 @@ class PrivateTour extends PureComponent {
         <div className="row airplane-container">
           <DatePicker />
           <div className="twelve columns text-center invite">
-            <h2 className="text-bold">expert-designed private tour</h2>
+            <h2 className="text-bold header">expert-designed private tour</h2>
             <p className="container">
               Travia craft unforgettable personal adventtures in small groupds.
               We set the standard in custom designed private tours around

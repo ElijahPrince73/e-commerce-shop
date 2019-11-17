@@ -11,10 +11,6 @@
     url('../../assets/images/airplane-window.jpg');
 }
 
-.airplane-container h2, h3 {
-  text-transform: uppercase;
-}
-
 .invite {
   margin-bottom: 13%;
 }

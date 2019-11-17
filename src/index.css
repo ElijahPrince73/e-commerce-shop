@@ -19,10 +19,23 @@ p {
   margin-top: 3%;
 }
 
+.m-0 {
+  margin: 0 !important;
+}
+
 .w-65 {
   width: 65%;
 }
 
 .u-half-width {
   width: 50%;
+}
+
+.header {
+  color: #4c4c4c;
+  text-transform: uppercase;
+}
+
+.header-content {
+  margin-bottom: 5%;
 }

@@ -1,0 +1,21 @@
+.simple-card-container {
+  background: gray;
+}
+
+.simple-card-content {
+  background: white;
+  margin: 250px 15px 15px 15px;
+  padding: 15px;
+}
+
+.product-name {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 32px;
+  height:  65px;
+}
+
+.star {
+  color: #FBAE16;
+  font-size: 20px;
+}
