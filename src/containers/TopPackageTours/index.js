@@ -1,8 +1,7 @@
 import React from 'react'
 import { useQuery } from "@apollo/react-hooks";
 import TOURS from '../../graphql/queries/tours'
-import SimpleCard from '../Cards/SimpleCard'
-import './index.css'
+import SimpleCard from '../../components/Cards/SimpleCard'
 
 const TopPackageTours = () => {
   const { loading, error, data } = useQuery(TOURS)

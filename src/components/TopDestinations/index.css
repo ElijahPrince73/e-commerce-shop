@@ -1,0 +1,35 @@
+.top-destinations-container {
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.desination-card-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30%;
+  margin-top: 3%;
+}
+
+.desination-card-content {
+  color: white;
+  text-align: center;
+  padding: 80px;
+}
+
+.destination-name {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 32px;
+  margin: 0;
+}
+
+.star {
+  color: #FBAE16;
+  font-size: 20px;
+}

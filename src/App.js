@@ -3,15 +3,13 @@ import {
   Route,
 } from "react-router-dom";
 
-import Home from './containers/Home/'
-import Tours from './containers/Tours'
+import Home from './pages/Home/'
 
 class App extends Component {
   render() {
     return (
       <>
         <Route exact path="/" component={Home} />
-        <Route exact path="/tours" component={Tours} />
       </>
     );
   }
