@@ -60,15 +60,6 @@
   background-color: white;
 }
 
-.picker-button {
-  width: 30%;
-  font-weight: 200;
-  height: auto !important;
-  background-color: #FBAE16 !important;
-  padding: 0px !important;
-  border-radius: 2px;
-}
-
 .picker-item {
   display: flex;
   justify-content: space-between;
