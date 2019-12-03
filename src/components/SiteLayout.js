@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import NavHeader from './NavHeader/index'
-import Footer from './Footer'
 class SiteLayout extends PureComponent {
   render() {
     const { children } = this.props
@@ -8,7 +7,6 @@ class SiteLayout extends PureComponent {
       <>
         <NavHeader />
         {children}
-        <Footer />
       </>
     );
   }

@@ -1,16 +1,13 @@
 import React from 'react'
-import Slider  from '../../components/Slider'
-import PrivateTour from "../../components/PrivateTour";
-import TopPackageTours from "../../containers/TopPackageTours";
-import TopDestinations from "../../components/TopDestinations";
+import Categories from "../../containers/Categories";
+import Products from '../../containers/Products'
+
 const Home = () => {
   return (
     <div className="row">
       <div className="twelve columns">
-        <Slider />
-        <PrivateTour />
-        <TopPackageTours />
-        <TopDestinations />
+        <Categories />
+        <Products />
       </div>
     </div>
   );

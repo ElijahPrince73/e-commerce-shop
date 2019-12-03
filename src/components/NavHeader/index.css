@@ -1,9 +1,7 @@
 .navbar-container, .cart {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  background: white;
-  padding-right: 2%;
 }
 
 .navbar-item, .cart {

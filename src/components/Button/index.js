@@ -1,7 +1,6 @@
 import React from 'react'
-import './index.css'
-const Button = ({ title }) => (
-  <button className="button-primary picker-button" type="submit">
+const Button = ({ title, onClick }) => (
+  <button className="button-primary" onClick={onClick}>
     {title}
   </button>
 );

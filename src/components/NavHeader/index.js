@@ -10,22 +10,14 @@ class NavHeader extends PureComponent {
     return (
       <div className="row">
         <div className="twelve columns navbar-container">
-          <NavLink to="/" className="logo-container">
-            <div>
-              <img src={Logo} alt="logo" />
-            </div>
-          </NavLink>
           <NavLink to="/" className="navbar-item">
             Home
           </NavLink>
-          <NavLink to="/tour" className="navbar-item">
-            Tours
+          <NavLink to="/categories" className="navbar-item">
+            Categories
           </NavLink>
-          <NavLink to="/promotion" className="navbar-item">
-            Promotion
-          </NavLink>
-          <NavLink to="/howitworks" className="navbar-item">
-            How it Works
+          <NavLink to="/products" className="navbar-item">
+            Products
           </NavLink>
           <div className="cart">
             <IoIosCart />
